@@ -43,3 +43,24 @@ function startAction() {
     num6.style.display = "flex";
   }, 5000);
 }
+
+function exitAction() {
+  const flag = confirm("종료하시겠습니까?");
+  console.log(flag);
+
+  if (flag) {
+    const num1 = document.getElementById("number1");
+    const num2 = document.getElementById("number2");
+    const num3 = document.getElementById("number3");
+    const num4 = document.getElementById("number4");
+    const num5 = document.getElementById("number5");
+    const num6 = document.getElementById("number6");
+
+    num1.style.display = "none";
+    num2.style.display = "none";
+    num3.style.display = "none";
+    num4.style.display = "none";
+    num5.style.display = "none";
+    num6.style.display = "none";
+  }
+}
